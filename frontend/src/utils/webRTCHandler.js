@@ -32,7 +32,7 @@ export const getLocalPreviewAndInitRoomConnection = async (
   navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
-      console.log("successfuly received local stream");
+      console.log("Successfuly received local stream");
       localStream = stream;
       showLocalVideoPreview(localStream);
       store.dispatch(setShowOverlay(false));

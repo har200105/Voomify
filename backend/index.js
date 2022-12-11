@@ -45,7 +45,7 @@ app.get("/api/get-turn-credentials", (req, res) => {
       res.json({ token });
     });
   } catch (err) {
-    console.log("error occurred when fetching turn server credentials");
+    console.log("Error occurred when fetching turn server credentials");
     console.log(err);
     res.json({ token: null });
   }

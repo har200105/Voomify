@@ -6,8 +6,6 @@ import {  useSelector } from "react-redux";
 import DirectChatHeader from "./DirectChatHeader";
 
 const getDirectChatHistory = (directChatHistory, socketId = null) => {
-  console.log(directChatHistory);
-  console.log(socketId);
   if (!socketId || !directChatHistory) {
     return [];
   }
